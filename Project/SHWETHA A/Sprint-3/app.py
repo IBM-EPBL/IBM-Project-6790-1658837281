@@ -5,7 +5,7 @@ from flask import Flask, request, render_template
 import joblib
 
 app = Flask(__name__)
-model = joblib.load(open('liverdiseaseSVC.pk', 'rb'))
+model = joblib.load(open('liverdiseaseKNN.pk', 'rb'))
 
 @app.route('/')
 def home():
